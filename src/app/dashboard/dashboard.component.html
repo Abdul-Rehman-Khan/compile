@@ -1,0 +1,14 @@
+
+<div style="display: block" style="width:400px;height:400px">
+  <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+</div>
+<p>
+  dashboard works!
+  you are Authenticated
+  <a routerLink='/'>go back</a>
+</p>
